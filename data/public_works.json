@@ -11,24 +11,41 @@
     {
       "id": "variant-claim-atlas",
       "title": "Variant–Trait Claim Atlas",
+      "title_zh": "Variant–Trait Claim Atlas（变异–性状证据图谱）",
       "subtitle": "Published variant–trait claims calibrated against genome-wide evidence",
+      "subtitle_zh": "基于全基因组证据对已发表变异–性状关联主张的系统校准",
       "category": "software",
       "category_label": "Software & Open Atlases",
+      "category_label_zh": "软件与开放图谱",
       "kind": "Interactive Web Atlas & Code",
+      "kind_zh": "交互式在线图谱与代码",
       "date": "2026-11",
       "date_display": "Nov 2026",
+      "date_display_zh": "2026年11月",
       "authors": "Hu Y, Xu Z, Jiang S, Huang L, Pan M, Luo S, Zhou H, Guo X",
       "summary": "Open interactive browser tool, Zenodo-archived atlas, and Python/R programmatic clients calibrating 201,720 published variant–trait claims from 71,577 PubMed abstracts against genome-wide significant associations in the NHGRI-EBI GWAS Catalog (LD r² ≥ 0.8 in 1000 Genomes EUR/EAS) with frequency-matched random variants as the chance null, alongside 239 ClinVar risk, association, and protective variants.",
+      "summary_zh": "开放式交互浏览器工具、Zenodo 归档图谱及 Python/R 客户端，将从 71,577 篇 PubMed 摘要中提取的 201,720 条已发表变异–性状主张，与 NHGRI-EBI GWAS Catalog 全基因组显著关联（千人基因组 EUR/EAS 群体 LD r² ≥ 0.8）进行校准，并以等位基因频率匹配的随机变异构建随机零分布基准，同时纳入 239 个 ClinVar 风险、关联及保护性变异。",
       "metrics": [
         "201,720 claims",
         "71,577 PubMed abstracts",
         "239 ClinVar variants",
         "Zero-tracking web app"
       ],
+      "metrics_zh": [
+        "201,720 条文献主张",
+        "71,577 篇 PubMed 摘要",
+        "239 个 ClinVar 变异",
+        "零追踪网页应用"
+      ],
       "badges": [
         "Live Web Tool",
         "Zenodo DOI",
         "MIT License"
+      ],
+      "badges_zh": [
+        "在线工具",
+        "Zenodo DOI",
+        "MIT 协议"
       ],
       "links": {
         "web_tool": "https://zxu69461-creator.github.io/variant-claim-atlas/",
@@ -40,24 +57,41 @@
     {
       "id": "flank129",
       "title": "flank129",
+      "title_zh": "flank129",
       "subtitle": "Calling knockout-only 129-strain flanking DNA directly from knockout mouse RNA-seq reads",
+      "subtitle_zh": "直接从敲除小鼠 RNA-seq 读段检测靶基因侧翼 129 品系供体 DNA",
       "category": "software",
       "category_label": "Software & Open Atlases",
+      "category_label_zh": "软件与开放图谱",
       "kind": "Open-Source CLI Tool",
+      "kind_zh": "开源命令行工具",
       "date": "2026-11",
       "date_display": "Nov 2026",
+      "date_display_zh": "2026年11月",
       "authors": "Xu Z (zxu69461-creator)",
       "summary": "Lightweight Python and samtools/bcftools workflow that detects residual 129 embryonic stem cell donor DNA flanking a targeted gene directly from a knockout mouse study's own RNA-seq reads, flagging strain-confounded differential expression near the knockout locus. Ships with prebuilt GRCm38 (4,458,459 shared 129 SNPs) and lifted-over GRCm39 (4,456,540 SNPs) reference lists plus CBA/J, DBA/2J, BALB/cJ, C3H/HeJ, and strain-private panels.",
+      "summary_zh": "轻量级 Python 与 samtools/bcftools 分析流程，直接利用敲除小鼠研究自身的 RNA-seq 原始读段检测靶基因侧翼残留的 129 胚胎干细胞供体 DNA，识别敲除位点附近由品系背景混杂导致的假阳性差异表达。预置 GRCm38（4,458,459 个共享 129 SNP）与坐标转换版 GRCm39（4,456,540 个 SNP）参考位点集，并附带 CBA/J、DBA/2J、BALB/cJ、C3H/HeJ 及品系特有位点面板。",
       "metrics": [
         "4,458,459 GRCm38 SNPs",
         "4,456,540 GRCm39 SNPs",
         "5 donor-strain panels",
         "1 Mb binned allele calling"
       ],
+      "metrics_zh": [
+        "4,458,459 个 GRCm38 SNP",
+        "4,456,540 个 GRCm39 SNP",
+        "5 套供体品系面板",
+        "1 Mb 窗口等位基因分型"
+      ],
       "badges": [
         "Python CLI",
         "GRCm38 & GRCm39",
         "MIT License"
+      ],
+      "badges_zh": [
+        "Python 命令行",
+        "GRCm38 与 GRCm39",
+        "MIT 协议"
       ],
       "links": {
         "repo": "https://github.com/zxu69461-creator/flank129"
@@ -67,24 +101,41 @@
     {
       "id": "depclaims",
       "title": "depclaims",
+      "title_zh": "depclaims",
       "subtitle": "Published cancer cell growth claims calibrated against genome-wide CRISPR and RNAi screens",
+      "subtitle_zh": "基于全基因组 CRISPR 与 RNAi 筛选校准已发表肿瘤细胞生长依赖性主张",
       "category": "software",
       "category_label": "Software & Open Atlases",
+      "category_label_zh": "软件与开放图谱",
       "kind": "Python Package & Open Atlas",
+      "kind_zh": "Python 工具包与开放图谱",
       "date": "2026-11",
       "date_display": "Nov 2026",
+      "date_display_zh": "2026年11月",
       "authors": "Xu Z, Cheng J, Pan M, Chen X, Luo J, Zhu X, Guo X",
       "summary": "Installable Python package (CLI and Atlas API) and open CC BY 4.0 atlas scoring published claims that silencing a gene reduces growth in a named human cancer cell line against genome-wide DepMap Public 26Q1 CRISPR (Chronos) and DEMETER2 RNAi screens plus DepMap 24Q4 expression. Provides 13,610 scored claims, 17,920 extracted statements, and summaries across 18,530 CRISPR-screened genes.",
+      "summary_zh": "可安装的 Python 工具包（提供 CLI 与 Atlas API）及 CC BY 4.0 开放图谱，依据 DepMap Public 26Q1 全基因组 CRISPR（Chronos）、DEMETER2 RNAi 筛选及 DepMap 24Q4 表达谱，对文献中“敲低/敲除某基因抑制特定人肿瘤细胞系生长”的主张进行定量评分。收录 13,610 条已评分主张、17,920 条抽取陈述，并汇总 18,530 个 CRISPR 筛选基因的统计概况。",
       "metrics": [
         "13,610 scored claims",
         "17,920 statements",
         "18,530 CRISPR genes",
         "DepMap 26Q1 + DEMETER2"
       ],
+      "metrics_zh": [
+        "13,610 条已评分主张",
+        "17,920 条抽取陈述",
+        "18,530 个 CRISPR 基因",
+        "DepMap 26Q1 + DEMETER2"
+      ],
       "badges": [
         "Python Package",
         "CC BY 4.0 Atlas",
         "MIT License"
+      ],
+      "badges_zh": [
+        "Python 工具包",
+        "CC BY 4.0 图谱",
+        "MIT 协议"
       ],
       "links": {
         "repo": "https://github.com/zxu69461-creator/depclaims"
@@ -94,24 +145,41 @@
     {
       "id": "hand-shoulder-genetic-axes",
       "title": "Genetic axes of hand and shoulder soft-tissue disease and their divergent responses to adiposity and incretin therapy",
+      "title_zh": "手部与肩部软组织疾病的遗传轴结构及其对肥胖与肠促胰素治疗的差异化响应",
       "subtitle": "Cross-biobank genomic structural equation modelling, single-cell mapping, and randomised trial safety study",
+      "subtitle_zh": "跨生物样本库基因组结构方程模型、单细胞映射与随机临床试验安全性研究",
       "category": "genomics",
       "category_label": "Genomics & Disease Genetics",
+      "category_label_zh": "基因组学与疾病遗传",
       "kind": "medRxiv Preprint & Code",
+      "kind_zh": "medRxiv 预印本与代码",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z, Cheng J, Chen X, Luo J, Zhu X, Guo X",
       "summary": "Integrates FinnGen release 13 and UK Biobank GWAS (>900,000 participants) via genomic SEM and common-factor GWAS to resolve hand and shoulder soft-tissue disorders into two heritable axes—tenosynovial and fibro-capsular—with divergent causal responses to adiposity in Mendelian randomisation, distinct tendon/palmar and shoulder-capsule single-cell fibroblast enrichments (GEO GSE140731, E-MTAB-12304), and divergent safety patterns across 210 placebo-controlled incretin receptor agonist trials.",
+      "summary_zh": "整合 FinnGen R13 与 UK Biobank 全基因组关联数据（>900,000 例样本），通过基因组结构方程模型（Genomic SEM）与共同因子 GWAS，将手部和肩部软组织疾病解析为腱鞘轴（tenosynovial）与纤维囊轴（fibro-capsular）两条可遗传轴；孟德尔随机化显示两者对肥胖呈相反的因果响应，在肌腱/掌腱膜与肩关节囊单细胞图谱（GEO GSE140731、E-MTAB-12304）中富集于截然不同的成纤维细胞亚群，并在 210 项安慰剂对照肠促胰素受体激动剂随机试验中呈现差异化安全性特征。",
       "metrics": [
         ">900,000 biobank GWAS",
         "2 heritable axes",
         "210 incretin RCTs",
         "58-trait LDSC + scRNA-seq"
       ],
+      "metrics_zh": [
+        ">90 万生物样本库 GWAS",
+        "2 条可遗传轴",
+        "210 项肠促胰素 RCT",
+        "58 性状 LDSC + 单细胞转录组"
+      ],
       "badges": [
         "medRxiv Preprint",
         "Source Data",
         "MIT License"
+      ],
+      "badges_zh": [
+        "medRxiv 预印本",
+        "源数据公开",
+        "MIT 协议"
       ],
       "links": {
         "preprint": "https://doi.org/10.64898/2026.10.27.26366575",
@@ -120,8 +188,11 @@
       "figure": {
         "src": "./assets/figures/hand_shoulder_F1.jpg",
         "label": "medRxiv 2026.10.27.26366575 · Figure 1",
+        "label_zh": "medRxiv 2026.10.27.26366575 · 图 1",
         "title": "Study overview: hand and shoulder soft-tissue disorder sites and four evidence layers",
+        "title_zh": "研究总览：手部与肩部软组织疾病解剖部位及四层证据架构",
         "caption": "Anatomical lesion sites rendered from BodyParts3D MRI meshes paired with cross-biobank FinnGen R13 + UK Biobank GWAS (>900,000 participants), Mendelian randomisation, synovial/tendon single-cell atlases, and 210 incretin receptor agonist trials.",
+        "caption_zh": "基于 BodyParts3D MRI 三维网格构建的解剖病变部位，配合整合 FinnGen R13 与 UK Biobank GWAS（>900,000 例受试者）、孟德尔随机化、滑膜/肌腱单细胞图谱及 210 项肠促胰素受体激动剂随机临床试验的四层证据架构。",
         "doi_url": "https://doi.org/10.64898/2026.10.27.26366575"
       },
       "bibtex": "@article{xu2026handshoulder,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Zhu, Xiaohu and Guo, Xingrong},\n  title = {Genetic axes of hand and shoulder soft-tissue disease and their divergent responses to adiposity and incretin therapy: a cross-biobank genomic and randomised trial study},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.27.26366575}\n}"
@@ -129,24 +200,41 @@
     {
       "id": "placebo-adjusted-label-frequencies",
       "title": "Placebo-Adjusted Frequencies of Nonserious Adverse Reactions Listed on US Prescription Drug Labels",
+      "title_zh": "美国处方药说明书所列非严重不良反应的安慰剂校正发生率",
       "subtitle": "Hierarchical modelling of randomized trial arms linked to current FDA prescription labels",
+      "subtitle_zh": "关联现行 FDA 处方药说明书的随机临床试验臂分层统计建模",
       "category": "pharmacology",
       "category_label": "Clinical Pharmacology & Safety",
+      "category_label_zh": "临床药理与用药安全",
       "kind": "medRxiv Preprint & Code",
+      "kind_zh": "medRxiv 预印本与代码",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z, Cheng J, Chen X, Luo J, Li Y, Qin Z, Deng X, Hu Y, Guo X, Zhu X",
       "summary": "Links arm-level adverse event reports from 9,759 placebo-controlled randomized trials on ClinicalTrials.gov to 19,249 listed nonserious adverse reactions across 919 US FDA prescription drug labels (via openFDA, SIDER 4.1, and ChEMBL). Using a temporally validated hierarchical model (standalone afstd reference implementation and DuckDB provenance archive), shows that an expected 79.8% of listed nonserious reactions have an excess fraction below 0.5 (median excess 0.75 per 100 patients).",
+      "summary_zh": "将 ClinicalTrials.gov 上 9,759 项安慰剂对照随机试验的试验臂级不良事件报告，通过 openFDA、SIDER 4.1 与 ChEMBL 系统关联至 919 份美国 FDA 处方药说明书中的 19,249 条非严重不良反应。采用经时间外推验证的分层模型（配套独立 afstd 参考实现与 DuckDB 溯源归档），结果显示预期有 79.8% 的已列出非严重不良反应其超额归因比例低于 0.5（中位超额发生率为每 100 名患者 0.75 例）。",
       "metrics": [
         "19,249 label reactions",
         "919 FDA drug labels",
         "9,759 placebo RCTs",
         "79.8% excess fraction < 0.5"
       ],
+      "metrics_zh": [
+        "19,249 条说明书不良反应",
+        "919 份 FDA 处方药说明书",
+        "9,759 项安慰剂对照 RCT",
+        "79.8% 超额归因比例 < 0.5"
+      ],
       "badges": [
         "medRxiv Preprint",
         "DuckDB Provenance",
         "MIT License"
+      ],
+      "badges_zh": [
+        "medRxiv 预印本",
+        "DuckDB 数据溯源",
+        "MIT 协议"
       ],
       "links": {
         "preprint": "https://doi.org/10.64898/2026.10.13.26365380",
@@ -155,8 +243,11 @@
       "figure": {
         "src": "./assets/figures/placebo_labels_F2.jpg",
         "label": "medRxiv 2026.10.13.26365380 · Figure 2",
+        "label_zh": "medRxiv 2026.10.13.26365380 · 图 2",
         "title": "Out-of-time prediction of later trials and agreement with external IPD benchmarks",
+        "title_zh": "后续临床试验的时间外推预测性能及与外部个体受试者数据（IPD）基准的一致性",
         "caption": "Temporal validation on post-February 2017 ClinicalTrials.gov arms (up to 8,994 predictions): mean log predictive score gain of the hierarchical estimator over nine baselines, 90% predictive interval calibration, and concordance with external statin IPD estimates.",
+        "caption_zh": "基于 2017 年 2 月后 ClinicalTrials.gov 试验臂的时间外推验证（最多 8,994 次预测）：展示分层估计器相对九种基线方法的平均对数预测得分增益、90% 预测区间校准表现，以及与外部他汀类 IPD 基准估计的一致性。",
         "doi_url": "https://doi.org/10.64898/2026.10.13.26365380"
       },
       "bibtex": "@article{xu2026placeboadjusted,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Li, Yawei and Qin, Zilong and Deng, Xinhao and Hu, Yuanchun and Guo, Xingrong and Zhu, Xiaohu},\n  title = {Placebo-Adjusted Frequencies of Nonserious Adverse Reactions Listed on US Prescription Drug Labels},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.13.26365380}\n}"
@@ -164,23 +255,39 @@
     {
       "id": "medrxiv-2026-365377",
       "title": "Do drugs proposed to protect or harm joints change serious osteoarthritis events? A meta-analysis of adverse event tables from 881 randomized trials",
+      "title_zh": "被认为保护或损伤关节的药物是否改变严重骨关节炎事件？基于 881 项随机临床试验不良事件表的系统分析",
       "subtitle": "Large-scale randomized trial adverse-event meta-analysis benchmarking observational drug-repositioning claims",
+      "subtitle_zh": "利用大规模随机试验不良事件数据检验观察性药物重定位主张",
       "category": "pharmacology",
       "category_label": "Clinical Pharmacology & Safety",
+      "category_label_zh": "临床药理与用药安全",
       "kind": "medRxiv Preprint",
+      "kind_zh": "medRxiv 预印本",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z, Pan M, Cheng J, Chen X, Luo J, Guo X, Zhu X",
       "summary": "Analyzes adverse event tables across 881 large placebo- or usual-care-controlled randomized clinical trials (~1.75 million participants; 9,408 serious joint events) to test whether cardiometabolic and repositioned medications—including GLP-1 receptor agonists and SGLT2 inhibitors—alter serious joint event rates over roughly two years, calibrated against positive and negative controls (canakinumab, anti-NGF antibodies, gallbladder events, ketoacidosis).",
+      "summary_zh": "系统分析 881 项大型安慰剂或常规治疗对照随机临床试验的不良事件表（约 175 万名受试者，9,408 例严重关节事件），检验包括 GLP-1 受体激动剂与 SGLT2 抑制剂在内的心代谢及重定位候选药物是否在约两年随访期内改变严重关节事件发生率，并引入卡那单抗（canakinumab）、抗 NGF 抗体、胆囊事件及酮症酸中毒作为阳性与阴性实证对照进行校准。",
       "metrics": [
         "881 randomized trials",
         "~1.75M participants",
         "9,408 serious events",
         "Positive & negative controls"
       ],
+      "metrics_zh": [
+        "881 项随机对照试验",
+        "约 175 万名受试者",
+        "9,408 例严重关节事件",
+        "阳性与阴性对照校准"
+      ],
       "badges": [
         "medRxiv Preprint",
         "Oct 2026"
+      ],
+      "badges_zh": [
+        "medRxiv 预印本",
+        "2026年10月"
       ],
       "links": {
         "preprint": "https://doi.org/10.64898/2026.10.13.26365377"
@@ -188,8 +295,11 @@
       "figure": {
         "src": "./assets/figures/oa_881_rcts_F3.jpg",
         "label": "medRxiv 2026.10.13.26365377 · Figure 3",
+        "label_zh": "medRxiv 2026.10.13.26365377 · 图 3",
         "title": "GLP-1 receptor agonists and SGLT2 inhibitors: positive-control detection vs serious joint events",
+        "title_zh": "GLP-1 受体激动剂与 SGLT2 抑制剂：阳性对照检出与严重关节不良事件对比",
         "caption": "Mantel-Haenszel risk ratios across 49 GLP-1RA and 46 SGLT2i randomized trials within the 881-trial (~1.75M participant) registry analysis: known gallbladder and ketoacidosis effects cleanly recovered alongside molecule-level stratification and follow-up meta-regression.",
+        "caption_zh": "在 881 项试验（约 175 万受试者）注册库框架内分析 49 项 GLP-1RA 与 46 项 SGLT2i 随机试验的 Mantel-Haenszel 风险比：清晰复现已知的胆囊不良事件与酮症酸中毒信号，并同步展示严重关节事件的药物分子分层与随访时长 Meta 回归。",
         "doi_url": "https://doi.org/10.64898/2026.10.13.26365377"
       },
       "bibtex": "@article{xu2026jointevents881,\n  author = {Xu, Zhida and Pan, Mengjie and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Guo, Xingrong and Zhu, Xiaohu},\n  title = {Do drugs proposed to protect or harm joints change serious osteoarthritis events? A meta-analysis of adverse event tables from 881 randomized trials},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.13.26365377}\n}"
@@ -197,24 +307,41 @@
     {
       "id": "ra-synovial-stroma-genetics",
       "title": "The synovial stroma carries little of the polygenic risk of rheumatoid arthritis",
+      "title_zh": "滑膜基质仅承载极少比例的类风湿关节炎多基因遗传风险",
       "subtitle": "Single-cell genetic mapping, synovial chromatin heritability, biopsy integration, and drug-target evaluation",
+      "subtitle_zh": "单细胞遗传映射、滑膜染色质遗传力分配、临床活检整合与药物靶点评估",
       "category": "genomics",
       "category_label": "Genomics & Disease Genetics",
+      "category_label_zh": "基因组学与疾病遗传",
       "kind": "Public Code & Result Archive",
+      "kind_zh": "公开代码与结果归档",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z, Cheng J, Chen X, Luo J, Guo X, Zhu X",
       "summary": "Maps rheumatoid arthritis GWAS polygenic risk onto synovial cell states across discovery (E-MTAB-11791; 54 cell states) and replication (GSE243917; 76 cell states) single-cell atlases via scDRS and MAGMA, partitions heritability across single-nucleus synovial and cultured fibroblast-like synoviocyte chromatin via S-LDSC (using height and Dupuytren's contracture as stromal controls), and integrates 492 synovial biopsies, Xenium spatial niches, and Open Targets drug targets across 24 reproducible CSV tables.",
+      "summary_zh": "利用 scDRS 与 MAGMA 在发现集（E-MTAB-11791，54 种细胞状态）和独立复现集（GSE243917，76 种细胞状态）滑膜单细胞图谱中映射类风湿关节炎 GWAS 多基因风险；通过 S-LDSC 在单核滑膜及培养成纤维样滑膜细胞染色质开放区分配遗传力（以身高与掌腱膜挛缩症作为基质对照），并整合 492 例滑膜活检、Xenium 空间微环境及 Open Targets 靶点数据，形成 24 份可复现 CSV 结果表。",
       "metrics": [
         "54 + 76 synovial states",
         "492 synovial biopsies",
         "24 result tables",
         "scDRS + S-LDSC + Xenium"
       ],
+      "metrics_zh": [
+        "54 + 76 种滑膜细胞状态",
+        "492 例临床滑膜活检",
+        "24 份公开结果表",
+        "scDRS + S-LDSC + Xenium"
+      ],
       "badges": [
         "Public Result Tables",
         "DuckDB Provenance",
         "MIT License"
+      ],
+      "badges_zh": [
+        "公开结果表",
+        "DuckDB 数据溯源",
+        "MIT 协议"
       ],
       "links": {
         "repo": "https://github.com/zxu69461-creator/ra-synovial-stroma-genetics"
@@ -224,24 +351,41 @@
     {
       "id": "genetic-content-of-diagnostic-codes",
       "title": "Measuring the genetic content of diagnostic codes",
+      "title_zh": "临床诊断编码的遗传成分量化",
       "subtitle": "Quantifying an ankylosing spondylitis-related HLA-B*27:05 signal in seronegative rheumatoid arthritis",
+      "subtitle_zh": "定量解析血清阴性类风湿关节炎中与强直性脊柱炎相关的 HLA-B*27:05 信号",
       "category": "genomics",
       "category_label": "Genomics & Disease Genetics",
+      "category_label_zh": "基因组学与疾病遗传",
       "kind": "CI-Verified Reproducible Archive",
+      "kind_zh": "CI 自动化验证可复现归档",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z†, Cheng J†, Chen X, Luo J, Guo X*, Zhu X*",
       "summary": "Self-contained, offline-reproducible analytical archive with SHA-256 file manifests and automated GitHub Actions verification measuring diagnostic-code genetic content across a 1,677-endpoint FinnGen HLA-B*27:05 atlas and UK Biobank fixed-panel regressions, including 22-locus and expanded-MHC 21-locus AS-equivalent estimates, conditional null simulations, and 43 machine-readable supplementary tables.",
+      "summary_zh": "配备 SHA-256 文件校验清单与 GitHub Actions 自动验证的自包含离线可复现分析归档，基于 1,677 个 FinnGen 疾病终点的 HLA-B*27:05 图谱及 UK Biobank 固定位点回归框架，量化临床诊断编码的遗传成分，包含 22 位点与扩展 MHC 21 位点强直性脊柱炎等效比例估计、条件零假设模拟及 43 份机读补充结果表。",
       "metrics": [
         "1,677 FinnGen endpoints",
         "43 supplementary tables",
         "SHA-256 verified",
         "GitHub Actions CI"
       ],
+      "metrics_zh": [
+        "1,677 个 FinnGen 终点",
+        "43 份机读补充表",
+        "SHA-256 完整性校验",
+        "GitHub Actions CI 验证"
+      ],
       "badges": [
         "CI Verified",
         "Offline Reproducible",
         "MIT License"
+      ],
+      "badges_zh": [
+        "CI 自动验证",
+        "离线可复现",
+        "MIT 协议"
       ],
       "links": {
         "repo": "https://github.com/zxu69461-creator/genetic-content-of-diagnostic-codes"
@@ -251,24 +395,41 @@
     {
       "id": "drug-label-attributable-fractions",
       "title": "Attributable fractions of drug-label side effects from placebo-controlled trials",
+      "title_zh": "基于安慰剂对照试验的药品说明书不良反应归因分数估计器",
       "subtitle": "Companion hierarchical estimator and temporal validation benchmark (afstd)",
+      "subtitle_zh": "配套分层估计器与时间外推验证基准实现（afstd）",
       "category": "pharmacology",
       "category_label": "Clinical Pharmacology & Safety",
+      "category_label_zh": "临床药理与用药安全",
       "kind": "Open-Source Reference Code",
+      "kind_zh": "开源参考实现",
       "date": "2026-10",
       "date_display": "Oct 2026",
+      "date_display_zh": "2026年10月",
       "authors": "Xu Z et al. (zxu69461-creator)",
       "summary": "Companion open-source Python implementation of the trial-validated hierarchical attributable-fraction estimator (afstd, installable with pytest conformance tests) and reproducible ClinicalTrials.gov / openFDA / SIDER 4.1 / ChEMBL pipeline with DuckDB provenance tracking and preregistered analysis decision checks.",
+      "summary_zh": "经临床试验验证的分层归因分数估计器（afstd，可安装并附完整 pytest 一致性测试套件）的配套开源 Python 实现，涵盖可复现的 ClinicalTrials.gov / openFDA / SIDER 4.1 / ChEMBL 数据处理流程、DuckDB 血缘追踪与预注册分析决策校验。",
       "metrics": [
         "afstd Python package",
         "pytest conformance suite",
         "Preregistered decision log",
         "ClinicalTrials.gov + openFDA"
       ],
+      "metrics_zh": [
+        "afstd Python 工具包",
+        "pytest 一致性测试套件",
+        "预注册决策核查日志",
+        "ClinicalTrials.gov + openFDA"
+      ],
       "badges": [
         "Reference Implementation",
         "Companion Repo",
         "MIT License"
+      ],
+      "badges_zh": [
+        "参考实现",
+        "配套仓库",
+        "MIT 协议"
       ],
       "links": {
         "repo": "https://github.com/zxu69461-creator/drug-label-attributable-fractions"
