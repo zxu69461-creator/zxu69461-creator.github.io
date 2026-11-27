@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhida Xu — Computational Genomics &amp; Clinical Trial Evidence</title>
+  <meta name="description" content="Academic homepage of Zhida Xu (School of Biomedical Engineering, Hubei University of Medicine). Open-source tools, atlases, and public preprints in computational genomics, functional evidence calibration, and clinical trial safety.">
+  <meta property="og:title" content="Zhida Xu — Computational Genomics &amp; Clinical Trial Evidence">
+  <meta property="og:description" content="Verified public repositories, interactive open atlases, and medRxiv preprints by Zhida Xu.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/hero-motif.svg">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('zx-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Zhida Xu home">
+        <img class="brand-mark" src="./assets/favicon.svg" alt="" width="30" height="30">
+        <span class="brand-name">Zhida Xu</span>
+      </a>
+
+      <div class="nav-wrap">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#resources">Software</a>
+          <a href="#figures">Figures</a>
+          <a href="#works">Preprints &amp; Code</a>
+          <a href="#methods">Methods</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="theme-icon" id="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="theme-icon" id="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden>
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <span id="theme-label">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero / About -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Computational Genomics &middot; Evidence Calibration &middot; Trial Safety</p>
+          <h1 class="hero-title">Zhida Xu</h1>
+          <p class="hero-role">M.Sc. / M.Med. Candidate in Biomedical Engineering &middot; School of Biomedical Engineering, Hubei University of Medicine</p>
+          <p class="hero-lead">
+            I develop open-source computational pipelines, interactive atlases, and statistical benchmarks to test biomedical claims directly against genome-wide genetic, functional-screen, and randomized clinical trial evidence—from raw mouse RNA-seq reads to biobank GWAS and ClinicalTrials.gov safety registries.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://zxu69461-creator.github.io/variant-claim-atlas/" target="_blank" rel="noopener noreferrer">
+              Variant–Trait Claim Atlas &#8599;
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/zxu69461-creator" target="_blank" rel="noopener noreferrer">
+              GitHub &#8599;
+            </a>
+            <a class="btn btn-secondary" href="https://orcid.org/0009-0003-5277-7161" target="_blank" rel="noopener noreferrer">
+              ORCID &#8599;
+            </a>
+          </div>
+
+          <div class="hero-meta-bar">
+            <span class="meta-item"><strong>Email</strong> <a class="mono" href="mailto:xuzhida2026@163.com">xuzhida2026@163.com</a></span>
+            <span class="meta-item"><strong>ORCID</strong> <a class="mono" href="https://orcid.org/0009-0003-5277-7161" target="_blank" rel="noopener noreferrer">0009-0003-5277-7161</a></span>
+            <span class="meta-item"><strong>GitHub</strong> <a class="mono" href="https://github.com/zxu69461-creator" target="_blank" rel="noopener noreferrer">@zxu69461-creator</a></span>
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-label="Verified public research footprint">
+          <div class="motif-frame">
+            <svg class="motif-svg" viewBox="0 0 420 245" fill="none" role="img" aria-label="Calibration curves comparing published biomedical claims against genome-wide and trial evidence">
+              <g class="motif-grid-line">
+                <line x1="48" y1="34" x2="48" y2="198"/>
+                <line x1="48" y1="198" x2="384" y2="198"/>
+                <line x1="48" y1="157" x2="384" y2="157" stroke-dasharray="3 4"/>
+                <line x1="48" y1="116" x2="384" y2="116" stroke-dasharray="3 4"/>
+                <line x1="48" y1="75" x2="384" y2="75" stroke-dasharray="3 4"/>
+                <line x1="132" y1="34" x2="132" y2="198" stroke-dasharray="3 4"/>
+                <line x1="216" y1="34" x2="216" y2="198" stroke-dasharray="3 4"/>
+                <line x1="300" y1="34" x2="300" y2="198" stroke-dasharray="3 4"/>
+              </g>
+              <line class="motif-null-line" x1="48" y1="198" x2="378" y2="42"/>
+              <path class="motif-curve-primary" d="M48 198 C110 180, 165 150, 224 118 C280 88, 330 62, 378 48"/>
+              <path class="motif-curve-secondary" d="M48 198 C118 191, 184 178, 248 160 C302 145, 343 127, 378 110"/>
+              <g class="motif-whisker">
+                <line x1="94" y1="170" x2="94" y2="190"/>
+                <line x1="152" y1="144" x2="152" y2="168"/>
+                <line x1="216" y1="108" x2="216" y2="136"/>
+                <line x1="278" y1="76" x2="278" y2="104"/>
+                <line x1="340" y1="48" x2="340" y2="72"/>
+              </g>
+              <g class="motif-dot-primary">
+                <circle cx="94" cy="180" r="3.6"/>
+                <circle cx="152" cy="156" r="4"/>
+                <circle cx="216" cy="122" r="4.5"/>
+                <circle cx="278" cy="90" r="4.2"/>
+                <circle cx="340" cy="60" r="4.6"/>
+              </g>
+              <g class="motif-dot-secondary">
+                <circle cx="122" cy="187" r="3"/>
+                <circle cx="192" cy="173" r="3.4"/>
+                <circle cx="262" cy="156" r="3.6"/>
+                <circle cx="328" cy="134" r="3.8"/>
+              </g>
+              <text class="motif-label" x="50" y="22">GENOME-WIDE &amp; TRIAL EVIDENCE CALIBRATION</text>
+              <text class="motif-label" x="50" y="220">PUBLISHED CLAIMS</text>
+              <text class="motif-label" x="270" y="220">CALIBRATED SUPPORT</text>
+              <text class="motif-label-primary" x="292" y="42">GWAS / CRISPR</text>
+              <text class="motif-label-secondary" x="292" y="100">TRIAL EXCESS</text>
+            </svg>
+          </div>
+
+          <p class="footprint-heading">
+            <span>Verified Public Footprint</span>
+            <span class="status-dot">Public-Only Audit</span>
+          </p>
+
+          <div class="stat-grid">
+            <div class="stat-cell">
+              <span class="stat-value">8</span>
+              <span class="stat-label">Public MIT Repositories</span>
+            </div>
+            <div class="stat-cell">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Live medRxiv Preprints</span>
+            </div>
+            <div class="stat-cell">
+              <span class="stat-value">201,720</span>
+              <span class="stat-label">Calibrated Variant Claims</span>
+            </div>
+            <div class="stat-cell">
+              <span class="stat-value">19,249</span>
+              <span class="stat-label">FDA Label Reactions Modelled</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Research Agenda</p>
+            <h2 class="section-title">Three Pillars of Open Computational Work</h2>
+          </div>
+          <p class="section-intro">
+            Every project listed here uses publicly accessible inputs, versioned code, and reproducible analytical archives built for independent verification.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar">
+            <span class="pillar-num">01</span>
+            <h3>Genomics &amp; Functional Evidence Calibration</h3>
+            <p>
+              Auditing how well published candidate-variant associations and cancer gene-dependency claims hold up against genome-wide GWAS Catalog, ClinVar, and DepMap CRISPR/RNAi perturbation screens, alongside detecting flanking 129-strain donor DNA directly from knockout mouse RNA-seq reads.
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-subtle">variant-claim-atlas</span>
+              <span class="tag-subtle">depclaims</span>
+              <span class="tag-subtle">flank129</span>
+            </div>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar-num">02</span>
+            <h3>Biobank Genetic Architecture &amp; Cell-State Mapping</h3>
+            <p>
+              Applying genomic structural equation modelling, Mendelian randomisation, LD score regression, single-cell genetic-load mapping (scDRS/MAGMA), and chromatin heritability partitioning across FinnGen, UK Biobank, and synovial/tendon single-cell atlases.
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-subtle">hand-shoulder-genetic-axes</span>
+              <span class="tag-subtle">ra-synovial-stroma-genetics</span>
+              <span class="tag-subtle">diagnostic-codes</span>
+            </div>
+          </article>
+
+          <article class="pillar">
+            <span class="pillar-num">03</span>
+            <h3>Clinical Pharmacology &amp; Randomized Trial Safety</h3>
+            <p>
+              Building temporally validated hierarchical trial-arm models linking ClinicalTrials.gov adverse event tables to US FDA prescription labels (openFDA, SIDER, ChEMBL) and testing drug-repositioning hypotheses across hundreds of placebo-controlled trials.
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-subtle">placebo-adjusted-labels</span>
+              <span class="tag-subtle">afstd</span>
+              <span class="tag-subtle">881-RCT meta-analysis</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Open Software & Atlases -->
+    <section id="resources" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Open Resources &amp; Software</p>
+            <h2 class="section-title">Reusable Tools &amp; Interactive Atlases</h2>
+          </div>
+          <p class="section-intro">
+            Standalone browser applications, command-line workflows, and Python/R libraries released under MIT and CC BY 4.0 licences.
+          </p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="tool-card">
+            <div class="tool-top">
+              <span class="pill pill-live">Live Web Atlas</span>
+              <span class="mono" style="color: var(--ink-muted);">Zenodo &middot; MIT</span>
+            </div>
+            <h3>Variant–Trait Claim Atlas</h3>
+            <p class="tool-desc">
+              Zero-tracking browser tool and Zenodo archive calibrating 201,720 published variant–trait claims from 71,577 PubMed abstracts against NHGRI-EBI GWAS Catalog evidence and 239 ClinVar risk variants, with Python and R clients.
+            </p>
+            <div class="code-snippet"><button class="copy-btn" type="button" data-copy='python examples/vca_client.py check rs7903146 "type 2 diabetes"'>Copy</button><code>python examples/vca_client.py check rs7903146 "type 2 diabetes"</code></div>
+            <div class="tool-links">
+              <a class="work-link-primary" href="https://zxu69461-creator.github.io/variant-claim-atlas/" target="_blank" rel="noopener noreferrer">Open Web Tool &#8599;</a>
+              <a href="https://github.com/zxu69461-creator/variant-claim-atlas" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+              <a href="https://doi.org/10.5281/zenodo.24314560" target="_blank" rel="noopener noreferrer">Zenodo &#8599;</a>
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <div class="tool-top">
+              <span class="pill pill-accent">RNA-seq CLI</span>
+              <span class="mono" style="color: var(--ink-muted);">GRCm38/39 &middot; MIT</span>
+            </div>
+            <h3>flank129</h3>
+            <p class="tool-desc">
+              Calls residual 129-strain donor DNA flanking a targeted gene directly from a knockout mouse study's own RNA-seq reads using 4.46M shared SNP sites (plus CBA/J, DBA/2J, BALB/cJ, C3H/HeJ, and private panels) to flag flanking confounding.
+            </p>
+            <div class="code-snippet"><button class="copy-btn" type="button" data-copy="flank129.py call example/samples_GSE173144.tsv Mus_musculus.GRCm38.102.gtf.gz Cxcr5 out/">Copy</button><code>flank129.py call example/samples_GSE173144.tsv Mus_musculus.GRCm38.102.gtf.gz Cxcr5 out/</code></div>
+            <div class="tool-links">
+              <a href="https://github.com/zxu69461-creator/flank129" target="_blank" rel="noopener noreferrer">GitHub Repository &#8599;</a>
+            </div>
+          </article>
+
+          <article class="tool-card">
+            <div class="tool-top">
+              <span class="pill pill-accent">Python Package</span>
+              <span class="mono" style="color: var(--ink-muted);">DepMap 26Q1 &middot; MIT</span>
+            </div>
+            <h3>depclaims</h3>
+            <p class="tool-desc">
+              Installable Python CLI and library plus CC BY 4.0 atlas scoring 13,610 published cancer gene-dependency claims (17,920 statements across 18,530 genes) against DepMap 26Q1 CRISPR (Chronos) and DEMETER2 RNAi screens.
+            </p>
+            <div class="code-snippet"><button class="copy-btn" type="button" data-copy="depclaims score --cache depmap_cache KRAS PANC-1">Copy</button><code>depclaims score --cache depmap_cache KRAS PANC-1</code></div>
+            <div class="tool-links">
+              <a href="https://github.com/zxu69461-creator/depclaims" target="_blank" rel="noopener noreferrer">GitHub Repository &#8599;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Preprint Figures -->
+    <section id="figures" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Visual Evidence &middot; Live medRxiv Preprints</p>
+            <h2 class="section-title">Selected Figures from Public Preprints</h2>
+          </div>
+          <p class="section-intro">
+            Key analytical figures drawn directly from live October 2026 medRxiv preprints. Click any figure to inspect full-resolution panel labels and statistics.
+          </p>
+        </div>
+
+        <div class="figures-grid">
+          <figure class="figure-card">
+            <button
+              class="figure-stage figure-trigger"
+              type="button"
+              data-fig-src="./assets/figures/hand_shoulder_F1.jpg"
+              data-fig-label="medRxiv 2026.10.27.26366575 · Figure 1"
+              data-fig-title="Study overview: hand and shoulder soft-tissue disorder sites and four evidence layers"
+              data-fig-caption="Anatomical lesion sites rendered from BodyParts3D MRI meshes paired with the four-layer analytical stack integrating FinnGen R13 and UK Biobank GWAS (&gt;900,000 participants), Mendelian randomisation, synovial/tendon single-cell atlases, and 210 incretin receptor agonist trials."
+              data-fig-doi="https://doi.org/10.64898/2026.10.27.26366575"
+              aria-label="Inspect full-resolution Figure 1 from Hand and Shoulder Genetic Axes medRxiv preprint"
+            >
+              <img src="./assets/figures/hand_shoulder_F1.jpg" alt="Figure 1: Study overview showing anatomical sites of hand and shoulder soft-tissue disorders and four analytical evidence layers" loading="lazy" width="1280" height="1207">
+              <span class="figure-zoom-badge">Zoom &#10530;</span>
+            </button>
+            <figcaption class="figure-meta">
+              <div class="figure-meta-top">
+                <span class="pill pill-live">medRxiv &middot; Fig. 1</span>
+                <span class="mono figure-scale">&gt;900k GWAS &middot; 210 RCTs</span>
+              </div>
+              <h3>Multi-layer musculoskeletal fibrosis study design</h3>
+              <p>Anatomical disorder sites, cross-biobank GWAS scale, palmar-fascia single-cell UMAP, and randomized incretin-trial safety integration.</p>
+              <div class="figure-links">
+                <button
+                  class="figure-action-btn figure-trigger"
+                  type="button"
+                  data-fig-src="./assets/figures/hand_shoulder_F1.jpg"
+                  data-fig-label="medRxiv 2026.10.27.26366575 · Figure 1"
+                  data-fig-title="Study overview: hand and shoulder soft-tissue disorder sites and four evidence layers"
+                  data-fig-caption="Anatomical lesion sites rendered from BodyParts3D MRI meshes paired with the four-layer analytical stack integrating FinnGen R13 and UK Biobank GWAS (&gt;900,000 participants), Mendelian randomisation, synovial/tendon single-cell atlases, and 210 incretin receptor agonist trials."
+                  data-fig-doi="https://doi.org/10.64898/2026.10.27.26366575"
+                >Full Resolution &#10530;</button>
+                <a href="https://doi.org/10.64898/2026.10.27.26366575" target="_blank" rel="noopener noreferrer">Preprint DOI &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <button
+              class="figure-stage figure-trigger"
+              type="button"
+              data-fig-src="./assets/figures/hand_shoulder_F2.jpg"
+              data-fig-label="medRxiv 2026.10.27.26366575 · Figure 2"
+              data-fig-title="Genetic structure of seven hand/shoulder disorders and GWAS of two heritable axes"
+              data-fig-caption="Cross-biobank Genomic SEM resolving seven disorders into tenosynovial (TEN) and fibro-capsular (FIB) axes, with genetic correlation heatmap, 2D axis-loading geometry, cross-cohort replication, and mirrored genome-wide Manhattan loci (61 vs 42 loci)."
+              data-fig-doi="https://doi.org/10.64898/2026.10.27.26366575"
+              aria-label="Inspect full-resolution Figure 2 from Hand and Shoulder Genetic Axes medRxiv preprint"
+            >
+              <img src="./assets/figures/hand_shoulder_F2.jpg" alt="Figure 2: Genomic SEM genetic correlations, two-axis loadings, and mirrored Manhattan plot across hand and shoulder disorders" loading="lazy" width="1042" height="1280">
+              <span class="figure-zoom-badge">Zoom &#10530;</span>
+            </button>
+            <figcaption class="figure-meta">
+              <div class="figure-meta-top">
+                <span class="pill pill-accent">medRxiv &middot; Fig. 2</span>
+                <span class="mono figure-scale">Genomic SEM &middot; 103 Loci</span>
+              </div>
+              <h3>Two heritable axes &amp; mirrored genome-wide architecture</h3>
+              <p>Disease-level genetic correlations (r<sub>g</sub>), common-factor Genomic SEM loadings, and mirrored Manhattan peaks separating tenosynovial and fibro-capsular risk.</p>
+              <div class="figure-links">
+                <button
+                  class="figure-action-btn figure-trigger"
+                  type="button"
+                  data-fig-src="./assets/figures/hand_shoulder_F2.jpg"
+                  data-fig-label="medRxiv 2026.10.27.26366575 · Figure 2"
+                  data-fig-title="Genetic structure of seven hand/shoulder disorders and GWAS of two heritable axes"
+                  data-fig-caption="Cross-biobank Genomic SEM resolving seven disorders into tenosynovial (TEN) and fibro-capsular (FIB) axes, with genetic correlation heatmap, 2D axis-loading geometry, cross-cohort replication, and mirrored genome-wide Manhattan loci (61 vs 42 loci)."
+                  data-fig-doi="https://doi.org/10.64898/2026.10.27.26366575"
+                >Full Resolution &#10530;</button>
+                <a href="https://doi.org/10.64898/2026.10.27.26366575" target="_blank" rel="noopener noreferrer">Preprint DOI &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <button
+              class="figure-stage figure-trigger"
+              type="button"
+              data-fig-src="./assets/figures/oa_881_rcts_F3.jpg"
+              data-fig-label="medRxiv 2026.10.13.26365377 · Figure 3"
+              data-fig-title="GLP-1 receptor agonists and SGLT2 inhibitors: positive-control detection vs serious joint events"
+              data-fig-caption="Mantel-Haenszel risk ratios across 49 GLP-1RA and 46 SGLT2i randomized trials within the 881-trial (~1.75M participant) registry analysis: known gallbladder and ketoacidosis effects are cleanly recovered alongside molecule-level stratification and follow-up meta-regression for serious joint events."
+              data-fig-doi="https://doi.org/10.64898/2026.10.13.26365377"
+              aria-label="Inspect full-resolution Figure 3 from 881 Randomized Trials Joint Adverse Events medRxiv preprint"
+            >
+              <img src="./assets/figures/oa_881_rcts_F3.jpg" alt="Figure 3: Risk ratios for GLP-1 receptor agonists and SGLT2 inhibitors comparing positive-control outcomes and serious osteoarthritis events" loading="lazy" width="1280" height="819">
+              <span class="figure-zoom-badge">Zoom &#10530;</span>
+            </button>
+            <figcaption class="figure-meta">
+              <div class="figure-meta-top">
+                <span class="pill pill-live">medRxiv &middot; Fig. 3</span>
+                <span class="mono figure-scale">881 RCTs &middot; ~1.75M Patients</span>
+              </div>
+              <h3>Positive-control calibration in 881 randomized trials</h3>
+              <p>Empirical control calibration, molecule-level GLP-1RA forest estimates, and trial follow-up bubble meta-regression testing drug-repositioning claims.</p>
+              <div class="figure-links">
+                <button
+                  class="figure-action-btn figure-trigger"
+                  type="button"
+                  data-fig-src="./assets/figures/oa_881_rcts_F3.jpg"
+                  data-fig-label="medRxiv 2026.10.13.26365377 · Figure 3"
+                  data-fig-title="GLP-1 receptor agonists and SGLT2 inhibitors: positive-control detection vs serious joint events"
+                  data-fig-caption="Mantel-Haenszel risk ratios across 49 GLP-1RA and 46 SGLT2i randomized trials within the 881-trial (~1.75M participant) registry analysis: known gallbladder and ketoacidosis effects are cleanly recovered alongside molecule-level stratification and follow-up meta-regression for serious joint events."
+                  data-fig-doi="https://doi.org/10.64898/2026.10.13.26365377"
+                >Full Resolution &#10530;</button>
+                <a href="https://doi.org/10.64898/2026.10.13.26365377" target="_blank" rel="noopener noreferrer">Preprint DOI &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="figure-card">
+            <button
+              class="figure-stage figure-trigger"
+              type="button"
+              data-fig-src="./assets/figures/placebo_labels_F2.jpg"
+              data-fig-label="medRxiv 2026.10.13.26365380 · Figure 2"
+              data-fig-title="Out-of-time prediction of later trials and agreement with external IPD benchmarks"
+              data-fig-caption="Temporal validation on post-February 2017 ClinicalTrials.gov arms (up to 8,994 predictions): mean log predictive score gain of the hierarchical estimator over nine baselines, 90% predictive interval calibration, and concordance with external individual-participant statin benchmarks."
+              data-fig-doi="https://doi.org/10.64898/2026.10.13.26365380"
+              aria-label="Inspect full-resolution Figure 2 from Placebo-Adjusted US Drug Label Frequencies medRxiv preprint"
+            >
+              <img src="./assets/figures/placebo_labels_F2.jpg" alt="Figure 2: Temporal validation log-score gains, interval calibration, and external IPD agreement for hierarchical FDA label reaction modelling" loading="lazy" width="1280" height="1280">
+              <span class="figure-zoom-badge">Zoom &#10530;</span>
+            </button>
+            <figcaption class="figure-meta">
+              <div class="figure-meta-top">
+                <span class="pill pill-accent">medRxiv &middot; Fig. 2</span>
+                <span class="mono figure-scale">8,994 Predictions &middot; 919 Labels</span>
+              </div>
+              <h3>Out-of-time Bayesian validation of FDA label reactions</h3>
+              <p>Log predictive score gains across 9 comparators, 90% interval coverage, and agreement with external statin individual-participant estimates.</p>
+              <div class="figure-links">
+                <button
+                  class="figure-action-btn figure-trigger"
+                  type="button"
+                  data-fig-src="./assets/figures/placebo_labels_F2.jpg"
+                  data-fig-label="medRxiv 2026.10.13.26365380 · Figure 2"
+                  data-fig-title="Out-of-time prediction of later trials and agreement with external IPD benchmarks"
+                  data-fig-caption="Temporal validation on post-February 2017 ClinicalTrials.gov arms (up to 8,994 predictions): mean log predictive score gain of the hierarchical estimator over nine baselines, 90% predictive interval calibration, and concordance with external individual-participant statin benchmarks."
+                  data-fig-doi="https://doi.org/10.64898/2026.10.13.26365380"
+                >Full Resolution &#10530;</button>
+                <a href="https://doi.org/10.64898/2026.10.13.26365380" target="_blank" rel="noopener noreferrer">Preprint DOI &#8599;</a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Complete Public Preprints & Repositories -->
+    <section id="works" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Verified Public Catalog</p>
+            <h2 class="section-title">Public Preprints &amp; Repositories</h2>
+          </div>
+          <p class="section-intro">
+            Filter all 9 verified public works (8 GitHub repositories and 3 live medRxiv preprints, two linked directly to their companion repositories).
+          </p>
+        </div>
+
+        <div class="works-controls">
+          <div class="filter-group" role="tablist" aria-label="Filter public works by research area">
+            <button class="filter-btn is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+              All <span class="filter-count" data-count="all">9</span>
+            </button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter="software">
+              Software &amp; Open Atlases <span class="filter-count" data-count="software">3</span>
+            </button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter="genomics">
+              Genomics &amp; Disease Genetics <span class="filter-count" data-count="genomics">3</span>
+            </button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter="pharmacology">
+              Clinical Pharmacology &amp; Safety <span class="filter-count" data-count="pharmacology">3</span>
+            </button>
+          </div>
+
+          <div class="search-wrap">
+            <label for="works-search" class="skip-link">Search public works</label>
+            <input id="works-search" class="search-input" type="search" placeholder="Filter by keyword, DOI, dataset…" autocomplete="off">
+          </div>
+        </div>
+
+        <div id="works-list" class="works-list" aria-live="polite">
+          <noscript>
+            <div class="empty-state">
+              JavaScript is disabled. Browse all public repositories directly on
+              <a href="https://github.com/zxu69461-creator" target="_blank" rel="noopener noreferrer">GitHub (@zxu69461-creator)</a>
+              and view the live interactive tool at
+              <a href="https://zxu69461-creator.github.io/variant-claim-atlas/" target="_blank" rel="noopener noreferrer">Variant–Trait Claim Atlas</a>.
+            </div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methods & Reproducibility Stack -->
+    <section id="methods" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Technical Profile</p>
+            <h2 class="section-title">Methods &amp; Reproducibility Stack</h2>
+          </div>
+          <p class="section-intro">
+            Core computational methods and open-science engineering practices evidenced directly in the public repositories above.
+          </p>
+        </div>
+
+        <div class="methods-grid">
+          <div class="method-col">
+            <h3>Statistical Genetics</h3>
+            <ul>
+              <li>Genomic SEM &amp; Common-Factor GWAS</li>
+              <li>Univariable &amp; Multivariable MR</li>
+              <li>LDSC &amp; Stratified S-LDSC Heritability</li>
+              <li>HLA Fine-Scale &amp; Diagnostic-Code Mapping</li>
+              <li>FinnGen R13, UK Biobank &amp; GWAS Catalog</li>
+            </ul>
+          </div>
+
+          <div class="method-col">
+            <h3>Functional &amp; Single-Cell</h3>
+            <ul>
+              <li>Raw RNA-seq Allele Calling (HISAT2 / samtools)</li>
+              <li>DepMap CRISPR (Chronos) &amp; DEMETER2 RNAi</li>
+              <li>scDRS, MAGMA &amp; Xenium Spatial Niches</li>
+              <li>kallisto | bustools &amp; limma-voom</li>
+              <li>PubMed / PubTator3 / ClinVar Calibration</li>
+            </ul>
+          </div>
+
+          <div class="method-col">
+            <h3>Trial &amp; Safety Modelling</h3>
+            <ul>
+              <li>Hierarchical Trial-Arm Attributable Fractions</li>
+              <li>Temporal Out-of-Time Prediction Benchmarks</li>
+              <li>ClinicalTrials.gov API v2 Ingestion</li>
+              <li>openFDA, SIDER 4.1 &amp; ChEMBL Linkage</li>
+              <li>Positive/Negative Control Calibration</li>
+            </ul>
+          </div>
+
+          <div class="method-col">
+            <h3>Open Engineering</h3>
+            <ul>
+              <li>Python 3, R, SQL (DuckDB), Bash</li>
+              <li>SHA-256 Checksum &amp; Provenance Manifests</li>
+              <li>Preregistered Decision Tables &amp; pytest</li>
+              <li>GitHub Actions CI &amp; GitHub Pages</li>
+              <li>Zenodo Archival DOIs &amp; MIT / CC BY 4.0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">Correspondence &amp; Collaboration</p>
+            <h2 class="section-title">Contact &amp; Academic Identifiers</h2>
+          </div>
+          <p class="section-intro">
+            Open to scientific dialogue on variant-claim calibration, knockout RNA-seq confounding, biobank genetics, clinical trial safety modelling, and prospective international doctoral research.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="https://github.com/zxu69461-creator" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/zxu69461-creator &#8599;</span>
+            <span class="contact-note">Public repositories, issue trackers, and open-source tools</span>
+          </a>
+
+          <a class="contact-card" href="https://orcid.org/0009-0003-5277-7161" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">ORCID</span>
+            <span class="contact-value mono">0009-0003-5277-7161 &#8599;</span>
+            <span class="contact-note">Persistent researcher identifier (Zhi-da Xu)</span>
+          </a>
+
+          <a class="contact-card" id="academic-email-link" href="mailto:xuzhida2026@163.com">
+            <span class="contact-label">Academic Email</span>
+            <span class="contact-value mono">xuzhida2026@163.com</span>
+            <span class="contact-note">School of Biomedical Engineering, Hubei University of Medicine</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="figure-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-dialog">
+      <div class="lightbox-header">
+        <div>
+          <p id="lightbox-label" class="lightbox-label mono"></p>
+          <h3 id="lightbox-title" class="lightbox-title"></h3>
+        </div>
+        <button id="lightbox-close-btn" class="lightbox-close" type="button" aria-label="Close figure preview" data-lightbox-close>&times;</button>
+      </div>
+      <div class="lightbox-stage">
+        <img id="lightbox-img" src="" alt="">
+      </div>
+      <div class="lightbox-footer">
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+        <a id="lightbox-doi" class="btn btn-primary lightbox-doi-btn" href="#" target="_blank" rel="noopener noreferrer">Open medRxiv Preprint &#8599;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Zhida Xu &middot; Verified public works only &middot; Zero cookies or analytics.</span>
+      <div class="footer-links">
+        <a href="https://zxu69461-creator.github.io/variant-claim-atlas/" target="_blank" rel="noopener noreferrer">Variant–Trait Claim Atlas</a>
+        <a href="https://github.com/zxu69461-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://orcid.org/0009-0003-5277-7161" target="_blank" rel="noopener noreferrer">ORCID</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

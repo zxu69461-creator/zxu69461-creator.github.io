@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "researcher": "Zhida Xu",
+    "email": "xuzhida2026@163.com",
+    "orcid": "0009-0003-5277-7161",
+    "github": "zxu69461-creator",
+    "last_audited": "2026-11-26",
+    "policy": "Public-only verified repositories, interactive web tools, Zenodo archives, and live medRxiv preprints."
+  },
+  "works": [
+    {
+      "id": "variant-claim-atlas",
+      "title": "Variant–Trait Claim Atlas",
+      "subtitle": "Published variant–trait claims calibrated against genome-wide evidence",
+      "category": "software",
+      "category_label": "Software & Open Atlases",
+      "kind": "Interactive Web Atlas & Code",
+      "date": "2026-11",
+      "date_display": "Nov 2026",
+      "authors": "Hu Y, Xu Z, Jiang S, Huang L, Pan M, Luo S, Zhou H, Guo X",
+      "summary": "Open interactive browser tool, Zenodo-archived atlas, and Python/R programmatic clients calibrating 201,720 published variant–trait claims from 71,577 PubMed abstracts against genome-wide significant associations in the NHGRI-EBI GWAS Catalog (LD r² ≥ 0.8 in 1000 Genomes EUR/EAS) with frequency-matched random variants as the chance null, alongside 239 ClinVar risk, association, and protective variants.",
+      "metrics": [
+        "201,720 claims",
+        "71,577 PubMed abstracts",
+        "239 ClinVar variants",
+        "Zero-tracking web app"
+      ],
+      "badges": [
+        "Live Web Tool",
+        "Zenodo DOI",
+        "MIT License"
+      ],
+      "links": {
+        "web_tool": "https://zxu69461-creator.github.io/variant-claim-atlas/",
+        "repo": "https://github.com/zxu69461-creator/variant-claim-atlas",
+        "zenodo": "https://doi.org/10.5281/zenodo.24314560"
+      },
+      "bibtex": "@misc{hu2026variantclaimatlas,\n  author = {Hu, Yuanchun and Xu, Zhida and Jiang, Shanqing and Huang, Linsheng and Pan, Mengjie and Luo, Shiqi and Zhou, Han and Guo, Xingrong},\n  title = {Variant--Trait Claim Atlas: published variant--trait claims calibrated against genome-wide evidence},\n  year = {2026},\n  publisher = {Zenodo},\n  doi = {10.5281/zenodo.24314560},\n  url = {https://zxu69461-creator.github.io/variant-claim-atlas/}\n}"
+    },
+    {
+      "id": "flank129",
+      "title": "flank129",
+      "subtitle": "Calling knockout-only 129-strain flanking DNA directly from knockout mouse RNA-seq reads",
+      "category": "software",
+      "category_label": "Software & Open Atlases",
+      "kind": "Open-Source CLI Tool",
+      "date": "2026-11",
+      "date_display": "Nov 2026",
+      "authors": "Xu Z (zxu69461-creator)",
+      "summary": "Lightweight Python and samtools/bcftools workflow that detects residual 129 embryonic stem cell donor DNA flanking a targeted gene directly from a knockout mouse study's own RNA-seq reads, flagging strain-confounded differential expression near the knockout locus. Ships with prebuilt GRCm38 (4,458,459 shared 129 SNPs) and lifted-over GRCm39 (4,456,540 SNPs) reference lists plus CBA/J, DBA/2J, BALB/cJ, C3H/HeJ, and strain-private panels.",
+      "metrics": [
+        "4,458,459 GRCm38 SNPs",
+        "4,456,540 GRCm39 SNPs",
+        "5 donor-strain panels",
+        "1 Mb binned allele calling"
+      ],
+      "badges": [
+        "Python CLI",
+        "GRCm38 & GRCm39",
+        "MIT License"
+      ],
+      "links": {
+        "repo": "https://github.com/zxu69461-creator/flank129"
+      },
+      "bibtex": "@software{xu2026flank129,\n  author = {Xu, Zhida},\n  title = {flank129: Call knockout-only 129-strain DNA around a targeted gene from a knockout mouse study's own RNA-seq reads},\n  year = {2026},\n  url = {https://github.com/zxu69461-creator/flank129}\n}"
+    },
+    {
+      "id": "depclaims",
+      "title": "depclaims",
+      "subtitle": "Published cancer cell growth claims calibrated against genome-wide CRISPR and RNAi screens",
+      "category": "software",
+      "category_label": "Software & Open Atlases",
+      "kind": "Python Package & Open Atlas",
+      "date": "2026-11",
+      "date_display": "Nov 2026",
+      "authors": "Xu Z, Cheng J, Pan M, Chen X, Luo J, Zhu X, Guo X",
+      "summary": "Installable Python package (CLI and Atlas API) and open CC BY 4.0 atlas scoring published claims that silencing a gene reduces growth in a named human cancer cell line against genome-wide DepMap Public 26Q1 CRISPR (Chronos) and DEMETER2 RNAi screens plus DepMap 24Q4 expression. Provides 13,610 scored claims, 17,920 extracted statements, and summaries across 18,530 CRISPR-screened genes.",
+      "metrics": [
+        "13,610 scored claims",
+        "17,920 statements",
+        "18,530 CRISPR genes",
+        "DepMap 26Q1 + DEMETER2"
+      ],
+      "badges": [
+        "Python Package",
+        "CC BY 4.0 Atlas",
+        "MIT License"
+      ],
+      "links": {
+        "repo": "https://github.com/zxu69461-creator/depclaims"
+      },
+      "bibtex": "@software{xu2026depclaims,\n  author = {Xu, Zhida and Cheng, Junhua and Pan, Mengjie and Chen, Xiaping and Luo, Jie and Zhu, Xiaohu and Guo, Xingrong},\n  title = {depclaims: Published cancer cell growth claims calibrated against genome-wide CRISPR and RNAi screens},\n  year = {2026},\n  url = {https://github.com/zxu69461-creator/depclaims}\n}"
+    },
+    {
+      "id": "hand-shoulder-genetic-axes",
+      "title": "Genetic axes of hand and shoulder soft-tissue disease and their divergent responses to adiposity and incretin therapy",
+      "subtitle": "Cross-biobank genomic structural equation modelling, single-cell mapping, and randomised trial safety study",
+      "category": "genomics",
+      "category_label": "Genomics & Disease Genetics",
+      "kind": "medRxiv Preprint & Code",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z, Cheng J, Chen X, Luo J, Zhu X, Guo X",
+      "summary": "Integrates FinnGen release 13 and UK Biobank GWAS (>900,000 participants) via genomic SEM and common-factor GWAS to resolve hand and shoulder soft-tissue disorders into two heritable axes—tenosynovial and fibro-capsular—with divergent causal responses to adiposity in Mendelian randomisation, distinct tendon/palmar and shoulder-capsule single-cell fibroblast enrichments (GEO GSE140731, E-MTAB-12304), and divergent safety patterns across 210 placebo-controlled incretin receptor agonist trials.",
+      "metrics": [
+        ">900,000 biobank GWAS",
+        "2 heritable axes",
+        "210 incretin RCTs",
+        "58-trait LDSC + scRNA-seq"
+      ],
+      "badges": [
+        "medRxiv Preprint",
+        "Source Data",
+        "MIT License"
+      ],
+      "links": {
+        "preprint": "https://doi.org/10.64898/2026.10.27.26366575",
+        "repo": "https://github.com/zxu69461-creator/hand-shoulder-genetic-axes"
+      },
+      "figure": {
+        "src": "./assets/figures/hand_shoulder_F1.jpg",
+        "label": "medRxiv 2026.10.27.26366575 · Figure 1",
+        "title": "Study overview: hand and shoulder soft-tissue disorder sites and four evidence layers",
+        "caption": "Anatomical lesion sites rendered from BodyParts3D MRI meshes paired with cross-biobank FinnGen R13 + UK Biobank GWAS (>900,000 participants), Mendelian randomisation, synovial/tendon single-cell atlases, and 210 incretin receptor agonist trials.",
+        "doi_url": "https://doi.org/10.64898/2026.10.27.26366575"
+      },
+      "bibtex": "@article{xu2026handshoulder,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Zhu, Xiaohu and Guo, Xingrong},\n  title = {Genetic axes of hand and shoulder soft-tissue disease and their divergent responses to adiposity and incretin therapy: a cross-biobank genomic and randomised trial study},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.27.26366575}\n}"
+    },
+    {
+      "id": "placebo-adjusted-label-frequencies",
+      "title": "Placebo-Adjusted Frequencies of Nonserious Adverse Reactions Listed on US Prescription Drug Labels",
+      "subtitle": "Hierarchical modelling of randomized trial arms linked to current FDA prescription labels",
+      "category": "pharmacology",
+      "category_label": "Clinical Pharmacology & Safety",
+      "kind": "medRxiv Preprint & Code",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z, Cheng J, Chen X, Luo J, Li Y, Qin Z, Deng X, Hu Y, Guo X, Zhu X",
+      "summary": "Links arm-level adverse event reports from 9,759 placebo-controlled randomized trials on ClinicalTrials.gov to 19,249 listed nonserious adverse reactions across 919 US FDA prescription drug labels (via openFDA, SIDER 4.1, and ChEMBL). Using a temporally validated hierarchical model (standalone afstd reference implementation and DuckDB provenance archive), shows that an expected 79.8% of listed nonserious reactions have an excess fraction below 0.5 (median excess 0.75 per 100 patients).",
+      "metrics": [
+        "19,249 label reactions",
+        "919 FDA drug labels",
+        "9,759 placebo RCTs",
+        "79.8% excess fraction < 0.5"
+      ],
+      "badges": [
+        "medRxiv Preprint",
+        "DuckDB Provenance",
+        "MIT License"
+      ],
+      "links": {
+        "preprint": "https://doi.org/10.64898/2026.10.13.26365380",
+        "repo": "https://github.com/zxu69461-creator/placebo-adjusted-label-frequencies"
+      },
+      "figure": {
+        "src": "./assets/figures/placebo_labels_F2.jpg",
+        "label": "medRxiv 2026.10.13.26365380 · Figure 2",
+        "title": "Out-of-time prediction of later trials and agreement with external IPD benchmarks",
+        "caption": "Temporal validation on post-February 2017 ClinicalTrials.gov arms (up to 8,994 predictions): mean log predictive score gain of the hierarchical estimator over nine baselines, 90% predictive interval calibration, and concordance with external statin IPD estimates.",
+        "doi_url": "https://doi.org/10.64898/2026.10.13.26365380"
+      },
+      "bibtex": "@article{xu2026placeboadjusted,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Li, Yawei and Qin, Zilong and Deng, Xinhao and Hu, Yuanchun and Guo, Xingrong and Zhu, Xiaohu},\n  title = {Placebo-Adjusted Frequencies of Nonserious Adverse Reactions Listed on US Prescription Drug Labels},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.13.26365380}\n}"
+    },
+    {
+      "id": "medrxiv-2026-365377",
+      "title": "Do drugs proposed to protect or harm joints change serious osteoarthritis events? A meta-analysis of adverse event tables from 881 randomized trials",
+      "subtitle": "Large-scale randomized trial adverse-event meta-analysis benchmarking observational drug-repositioning claims",
+      "category": "pharmacology",
+      "category_label": "Clinical Pharmacology & Safety",
+      "kind": "medRxiv Preprint",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z, Pan M, Cheng J, Chen X, Luo J, Guo X, Zhu X",
+      "summary": "Analyzes adverse event tables across 881 large placebo- or usual-care-controlled randomized clinical trials (~1.75 million participants; 9,408 serious joint events) to test whether cardiometabolic and repositioned medications—including GLP-1 receptor agonists and SGLT2 inhibitors—alter serious joint event rates over roughly two years, calibrated against positive and negative controls (canakinumab, anti-NGF antibodies, gallbladder events, ketoacidosis).",
+      "metrics": [
+        "881 randomized trials",
+        "~1.75M participants",
+        "9,408 serious events",
+        "Positive & negative controls"
+      ],
+      "badges": [
+        "medRxiv Preprint",
+        "Oct 2026"
+      ],
+      "links": {
+        "preprint": "https://doi.org/10.64898/2026.10.13.26365377"
+      },
+      "figure": {
+        "src": "./assets/figures/oa_881_rcts_F3.jpg",
+        "label": "medRxiv 2026.10.13.26365377 · Figure 3",
+        "title": "GLP-1 receptor agonists and SGLT2 inhibitors: positive-control detection vs serious joint events",
+        "caption": "Mantel-Haenszel risk ratios across 49 GLP-1RA and 46 SGLT2i randomized trials within the 881-trial (~1.75M participant) registry analysis: known gallbladder and ketoacidosis effects cleanly recovered alongside molecule-level stratification and follow-up meta-regression.",
+        "doi_url": "https://doi.org/10.64898/2026.10.13.26365377"
+      },
+      "bibtex": "@article{xu2026jointevents881,\n  author = {Xu, Zhida and Pan, Mengjie and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Guo, Xingrong and Zhu, Xiaohu},\n  title = {Do drugs proposed to protect or harm joints change serious osteoarthritis events? A meta-analysis of adverse event tables from 881 randomized trials},\n  journal = {medRxiv},\n  year = {2026},\n  doi = {10.64898/2026.10.13.26365377}\n}"
+    },
+    {
+      "id": "ra-synovial-stroma-genetics",
+      "title": "The synovial stroma carries little of the polygenic risk of rheumatoid arthritis",
+      "subtitle": "Single-cell genetic mapping, synovial chromatin heritability, biopsy integration, and drug-target evaluation",
+      "category": "genomics",
+      "category_label": "Genomics & Disease Genetics",
+      "kind": "Public Code & Result Archive",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z, Cheng J, Chen X, Luo J, Guo X, Zhu X",
+      "summary": "Maps rheumatoid arthritis GWAS polygenic risk onto synovial cell states across discovery (E-MTAB-11791; 54 cell states) and replication (GSE243917; 76 cell states) single-cell atlases via scDRS and MAGMA, partitions heritability across single-nucleus synovial and cultured fibroblast-like synoviocyte chromatin via S-LDSC (using height and Dupuytren's contracture as stromal controls), and integrates 492 synovial biopsies, Xenium spatial niches, and Open Targets drug targets across 24 reproducible CSV tables.",
+      "metrics": [
+        "54 + 76 synovial states",
+        "492 synovial biopsies",
+        "24 result tables",
+        "scDRS + S-LDSC + Xenium"
+      ],
+      "badges": [
+        "Public Result Tables",
+        "DuckDB Provenance",
+        "MIT License"
+      ],
+      "links": {
+        "repo": "https://github.com/zxu69461-creator/ra-synovial-stroma-genetics"
+      },
+      "bibtex": "@misc{xu2026rasynovialstroma,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Guo, Xingrong and Zhu, Xiaohu},\n  title = {The synovial stroma carries little of the polygenic risk of rheumatoid arthritis: code and result tables},\n  year = {2026},\n  url = {https://github.com/zxu69461-creator/ra-synovial-stroma-genetics}\n}"
+    },
+    {
+      "id": "genetic-content-of-diagnostic-codes",
+      "title": "Measuring the genetic content of diagnostic codes",
+      "subtitle": "Quantifying an ankylosing spondylitis-related HLA-B*27:05 signal in seronegative rheumatoid arthritis",
+      "category": "genomics",
+      "category_label": "Genomics & Disease Genetics",
+      "kind": "CI-Verified Reproducible Archive",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z†, Cheng J†, Chen X, Luo J, Guo X*, Zhu X*",
+      "summary": "Self-contained, offline-reproducible analytical archive with SHA-256 file manifests and automated GitHub Actions verification measuring diagnostic-code genetic content across a 1,677-endpoint FinnGen HLA-B*27:05 atlas and UK Biobank fixed-panel regressions, including 22-locus and expanded-MHC 21-locus AS-equivalent estimates, conditional null simulations, and 43 machine-readable supplementary tables.",
+      "metrics": [
+        "1,677 FinnGen endpoints",
+        "43 supplementary tables",
+        "SHA-256 verified",
+        "GitHub Actions CI"
+      ],
+      "badges": [
+        "CI Verified",
+        "Offline Reproducible",
+        "MIT License"
+      ],
+      "links": {
+        "repo": "https://github.com/zxu69461-creator/genetic-content-of-diagnostic-codes"
+      },
+      "bibtex": "@misc{xu2026diagnosticcodes,\n  author = {Xu, Zhida and Cheng, Junhua and Chen, Xiaping and Luo, Jie and Guo, Xingrong and Zhu, Xiaohu},\n  title = {Measuring the genetic content of diagnostic codes: an ankylosing spondylitis-related signal in seronegative rheumatoid arthritis},\n  year = {2026},\n  url = {https://github.com/zxu69461-creator/genetic-content-of-diagnostic-codes}\n}"
+    },
+    {
+      "id": "drug-label-attributable-fractions",
+      "title": "Attributable fractions of drug-label side effects from placebo-controlled trials",
+      "subtitle": "Companion hierarchical estimator and temporal validation benchmark (afstd)",
+      "category": "pharmacology",
+      "category_label": "Clinical Pharmacology & Safety",
+      "kind": "Open-Source Reference Code",
+      "date": "2026-10",
+      "date_display": "Oct 2026",
+      "authors": "Xu Z et al. (zxu69461-creator)",
+      "summary": "Companion open-source Python implementation of the trial-validated hierarchical attributable-fraction estimator (afstd, installable with pytest conformance tests) and reproducible ClinicalTrials.gov / openFDA / SIDER 4.1 / ChEMBL pipeline with DuckDB provenance tracking and preregistered analysis decision checks.",
+      "metrics": [
+        "afstd Python package",
+        "pytest conformance suite",
+        "Preregistered decision log",
+        "ClinicalTrials.gov + openFDA"
+      ],
+      "badges": [
+        "Reference Implementation",
+        "Companion Repo",
+        "MIT License"
+      ],
+      "links": {
+        "repo": "https://github.com/zxu69461-creator/drug-label-attributable-fractions"
+      },
+      "bibtex": "@software{xu2026attributablefractions,\n  author = {Xu, Zhida},\n  title = {Attributable fractions of drug-label side effects from placebo-controlled trials (afstd reference implementation)},\n  year = {2026},\n  url = {https://github.com/zxu69461-creator/drug-label-attributable-fractions}\n}"
+    }
+  ]
+}
